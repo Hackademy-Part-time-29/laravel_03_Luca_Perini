@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selfwork230424</title>
+    <title>Esercitazione 23/04/2024</title>
 </head>
 <body>
     <h1>{{$title}}</h1>
