@@ -8,14 +8,14 @@ class ArticlesController extends Controller{
     public $title = '';
     public $description = '';
     public $articles = [
-        ['id'=> 0, 'title'=>'primo articolo', 'description'=>'descrizione primo articolo'],
-        ['id'=> 1, 'title'=>'secondo articolo', 'description'=>'descrizione secondo articolo'],
-        ['id'=> 2, 'title'=>'terzo articolo', 'description'=>'descrizione terzo articolo'],
-        ['id'=> 3, 'title'=>'quarto articolo', 'description'=>'descrizione quarto articolo']];
+        ['id'=> 0, 'title'=>'Cucina', 'description'=>'descrizione primo articolo'],
+        ['id'=> 1, 'title'=>'Abbigliamento', 'description'=>'descrizione secondo articolo'],
+        ['id'=> 2, 'title'=>'Sport', 'description'=>'descrizione terzo articolo'],
+        ['id'=> 3, 'title'=>'Attualità', 'description'=>'descrizione quarto articolo']];
 
 
     public function index() {
-        $this->title= 'Articoli';
+        $this->title= 'Esplora Categorie:';
         $this->description= 'Lorem ipsum sit dolor est amen';
         $articles=$this->articles;
         return view('articoli', compact('articles'),['title'=>$this->title,'description'=>$this->description,]);
